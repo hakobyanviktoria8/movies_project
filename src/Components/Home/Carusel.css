@@ -1,0 +1,47 @@
+.homeTop img {
+    height: 100vh;
+    width: 100%;
+}
+
+.homeTop h2 {
+    position: absolute;
+    top: 15rem;
+    left: 3rem;
+    color: white;
+    font-size: 2.5rem;
+}
+
+.homeTop p {
+    position: absolute;
+    top: 20rem;
+    font-size: 1.5rem;
+    color: white;
+    left: 3rem;
+    width: 50%;
+}
+
+.homeTop button {
+    position: absolute;
+    top: 30rem;
+    width: 10rem;
+    font-size: 1.5rem;
+    left: 0;
+}
+
+.homeTop .seeMore {
+    left: 3rem;
+    background: white;
+    border: 3px solid #3e3e3e;
+}
+
+.homeTop .seeMore a {
+    color: #3e3e3e;
+    text-decoration: none;
+}
+
+.homeTop .seeThriller {
+    left: 15rem;
+    background: #3e3e3e;
+    color: white;
+    border: 3px solid white;
+}

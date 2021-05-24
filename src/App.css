@@ -1,38 +1,44 @@
-.App {
-  text-align: center;
+.pagination {
+    justify-content: center;
+    margin-top: 2rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar {
+    position: absolute !important;
+    z-index: 1;
+    left: 3rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar a {
+    text-decoration: none;
+    color: #cecece;
+    font-size: 2rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.navbar a:hover {
+    color: #cecece;
 }
 
-.App-link {
-  color: #61dafb;
+/*to delete the default style I used !important*/
+.page-item.active .page-link {
+    background-color: #3e3e3e !important;
+    border-color: #3e3e3e !important;
+    color: white !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.page-link {
+    color: #3e3e3e !important;
+}
+
+.page-link:hover {
+    color: #3e3e3e !important;
+    background-color: #3e3e3e29 !important;
+    border-color: #3e3e3e5e !important;
+}
+
+/*loading*/
+.loading {
+    display: flex;
+    justify-content: center;
+    margin-top: 10rem;
 }

@@ -1,0 +1,19 @@
+.Comment textarea {
+    width: 80%;
+    padding: 1rem;
+}
+
+.Comment button {
+    width: 20%;
+}
+
+.oneComment {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    align-items: baseline;
+}
+
+.oneComment .Delete {
+    width: 10%;
+}
