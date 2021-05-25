@@ -87,6 +87,23 @@ function App() {
                             onChange={handlePageChange}
                         />
                     </Route>
+                    <Route path="/movies_project/">
+                        <Home
+                            movies={movies}
+                            loading={loading}
+                            pageMoviesArr={pageMoviesArr}
+                            activePage={activePage}
+                        />
+                        <Pagination
+                            itemClass="page-item"
+                            linkClass="page-link"
+                            activePage={activePage}
+                            itemsCountPerPage={4}
+                            totalItemsCount={movies.length}
+                            pageRangeDisplayed={Math.ceil(pageMoviesArr.length)}
+                            onChange={handlePageChange}
+                        />
+                    </Route>
                     <Route exact path="/movie/:name">
                         <Movie movies={movies}/>
                     </Route>

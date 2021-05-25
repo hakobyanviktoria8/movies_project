@@ -15,6 +15,8 @@ function Home({loading, pageMoviesArr, activePage, movies}) {
             <div>
                 <CarouselComp movies={movies}/>
                 <Container className={"Home"}>
+                    <h1>All movies</h1>
+
                     <Row>
                         {
                             pageMoviesArr && pageMoviesArr.length > 0 &&

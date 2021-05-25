@@ -2,6 +2,13 @@
     margin-top: 5rem;
 }
 
+.Home h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #3e3e3e;
+}
+
 .Home .col {
     padding: 1rem;
 }
