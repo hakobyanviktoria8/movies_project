@@ -21,7 +21,9 @@ function Home({loading, pageMoviesArr, activePage, movies}) {
                             pageMoviesArr[activePage - 1].map(movie =>
                                 <Col key={movie.id}>
                                     <img src={movie.medium_cover_image} alt=""/>
-                                    <button><Link to={"/movie/" + movie.slug}>See more</Link></button>
+                                    <button>
+                                        <Link to={"/movie/" + movie.slug}>See movie</Link>
+                                    </button>
                                 </Col>
                             )
                         }

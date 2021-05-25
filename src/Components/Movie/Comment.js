@@ -8,13 +8,13 @@ function CommentList({id}) {
 
     //keep locale storaje
     useEffect(() => {
-        let localStorComment = JSON.parse(localStorage.getItem('Comments'));
+        let localStorComment = JSON.parse(localStorage.getItem('Comments_' + id));
         localStorComment && setComments(localStorComment);
     }, []);
 
     //add locale storaje
     useEffect(() => {
-        localStorage.setItem('Comments', JSON.stringify(comments));
+        localStorage.setItem('Comments_' + id, JSON.stringify(comments));
     }, [comments]);
 
     const handleChange = event => {

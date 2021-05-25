@@ -1,22 +1,27 @@
-.Home{
+.Home {
     margin-top: 5rem;
 }
-.Home .col{
+
+.Home .col {
     padding: 1rem;
 }
-.Home .col:hover{
+
+.Home .col:hover {
     box-shadow: 0 0 10px gray;
 }
-.Home img{
+
+.Home img {
     width: 100%;
 }
-.Home button{
+
+.Home button {
     margin: 1rem 10% 0;
     width: 80%;
     padding: .5rem;
     outline: none;
 }
-.Home button a{
+
+.Home button a {
     color: #3e3e3e;
     text-decoration: none;
     font-size: 1.2rem;

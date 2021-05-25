@@ -1,20 +1,24 @@
-.Movie{
+.Movie {
     padding-top: 5rem;
 }
-.Movie button{
+
+.Movie button {
     margin: 1rem 0;
     width: 60%;
     padding: .5rem;
     outline: none;
 }
-.Movie button a{
+
+.Movie button a {
     color: #3e3e3e;
     text-decoration: none;
     font-size: 1.2rem;
 }
-.Movie .rating{
+
+.Movie .rating {
     display: flex;
 }
-.Movie .rating h4{
+
+.Movie .rating h4 {
     margin-right: .5rem;
 }

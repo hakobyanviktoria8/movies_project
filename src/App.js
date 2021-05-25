@@ -6,8 +6,6 @@ import {Navbar} from "reactstrap";
 import Home from "./Components/Home/Home";
 import Movie from "./Components/Movie/Movie";
 
-// require("bootstrap/less/bootstrap.less");
-
 function App() {
     const url = "https://yts.mx/api/v2/list_movies.json";
 
