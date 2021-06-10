@@ -9,11 +9,18 @@
 
 .oneComment {
     display: flex;
-    justify-content: space-between;
     margin-top: 1rem;
     align-items: baseline;
+    border-bottom: 1px solid darkgray;
 }
-
-.oneComment .Delete {
+.oneComment p {
+    width: 75%;
+}
+.oneComment .Delete, .oneComment .Edit {
     width: 10%;
+    margin-left: 2%;
+
 }
+/*.editComments{*/
+    /*display: none;*/
+/*}*/

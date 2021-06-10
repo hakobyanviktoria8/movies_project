@@ -5,6 +5,8 @@ import "./Comment.css";
 function CommentList({id}) {
     const [input, setInput] = useState("");
     const [comments, setComments] = useState([]);
+    const [editComments, setEditComments] = useState("");
+    const [bool,setBool] = useState(false);
 
     //keep locale storaje
     useEffect(() => {
@@ -26,6 +28,35 @@ function CommentList({id}) {
         e.preventDefault();
         setComments([...comments, {id: Date.now(), text: input}]);
         setInput("");
+    };
+
+    //Edit Comment
+    const hendleEdit = (id) => {
+        // setComments(comments.map(item => {
+        //     if (item.id === id) {
+        //         setEditComments(item.text);
+        //
+        //         console.log("hendleEdit",id,item.text,bool)
+        //     }
+        // }));
+
+        comments.map(item=>{
+            if (item.id === id) {
+                setEditComments(item.text);
+
+                console.log("hendleEdit",id,item.text,bool)
+            }
+        });
+        setBool(!bool);
+    };
+
+    //handleEditComment
+    const handleEditComment = event => {
+        setEditComments(event.target.value);
+    };
+
+    const handleSave = (event) =>{
+        setInput(event.target.value)
     };
 
     //delete Comment
@@ -52,9 +83,16 @@ function CommentList({id}) {
                     {
                         comments && comments.map((item) => (
                             <div key={item.id} className={"oneComment"}>
-                                <p>{item.text}</p>
+                                <textarea style={{display: bool? "block":"none"}} value={editComments} onChange={handleEditComment}/>
+                                <button style={{display: bool? "block":"none"}} className={"Edit"} type={"submit"} onClick={() => handleSave(item.id)}>
+                                    Save
+                                </button>
+                                <p>{bool ? "" : item.text}</p>
                                 <button className={"Delete"} type={"submit"} onClick={() => hendleDel(item.id)}>
                                     Delete
+                                </button>
+                                <button className={"Edit"} type={"submit"} onClick={() => hendleEdit(item.id)}>
+                                    Edit
                                 </button>
                             </div>
                         ))
